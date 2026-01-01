@@ -130,3 +130,6 @@ $window.on('load', function() {
 
 })(jQuery);
 
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/gallery.js"></script>
