@@ -100,20 +100,22 @@
 
 $window.on('load', function() {
 
+
   $('#two .work-item').each(function() {
 
     $(this).poptrox({
+      baseZIndex: 20000,
+      selector: 'a.image',
       caption: function($a) {
         return $a.closest('.work-item').find('h3').text();
       },
       overlayColor: '#2c2c2c',
       overlayOpacity: 0.85,
-      popupCloserText: '',
+      popupCloserText: '×',
       popupLoaderText: '',
-      selector: 'a.image',
       usePopupCaption: true,
-      usePopupDefaultStyling: false,
-      usePopupEasyClose: false,
+      usePopupDefaultStyling: true,
+      usePopupEasyClose: true,
       usePopupNav: true,
       windowMargin: (breakpoints.active('<=small') ? 0 : 50)
     });
@@ -127,3 +129,4 @@ $window.on('load', function() {
 
 
 })(jQuery);
+
