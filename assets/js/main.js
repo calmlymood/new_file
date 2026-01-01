@@ -98,38 +98,20 @@
 		// Lightbox gallery.
 			$window.on('load', function() {
 
-$window.on('load', function() {
-
-
-  $('#two .work-item').each(function() {
-
-    $(this).poptrox({
-      baseZIndex: 20000,
-      selector: 'a.image',
-      caption: function($a) {
-        return $a.closest('.work-item').find('h3').text();
-      },
-      overlayColor: '#2c2c2c',
-      overlayOpacity: 0.85,
-      popupCloserText: '×',
-      popupLoaderText: '',
-      usePopupCaption: true,
-      usePopupDefaultStyling: true,
-      usePopupEasyClose: true,
-      usePopupNav: true,
-      windowMargin: (breakpoints.active('<=small') ? 0 : 50)
-    });
-
-  });
-
-});
-
+				$('#two').poptrox({
+					caption: function($a) { return $a.next('h3').text(); },
+					overlayColor: '#2c2c2c',
+					overlayOpacity: 0.85,
+					popupCloserText: '',
+					popupLoaderText: '',
+					selector: '.work-item a.image',
+					usePopupCaption: true,
+					usePopupDefaultStyling: false,
+					usePopupEasyClose: false,
+					usePopupNav: true,
+					windowMargin: (breakpoints.active('<=small') ? 0 : 50)
+				});
 
 			});
 
-
 })(jQuery);
-
-
-<script src="assets/js/main.js"></script>
-<script src="assets/js/gallery.js"></script>
