@@ -2146,9 +2146,8 @@ input, select, textarea {
 
 			.image.avatar img {
 				border-radius: 0%;
-				width: 200%;
-				margin-left: 0px; 
-    			margin-right: 40px;
+				width: 100%;
+
 			}
 
 /* List */
