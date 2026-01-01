@@ -3221,7 +3221,44 @@ input, select, textarea {
 	}
 
 
-.work-item a:not(:first-of-type) {
+.gallery-modal {
   display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  z-index: 99999;
+  align-items: center;
+  justify-content: center;
 }
 
+.gallery-modal img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.gallery-modal .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.gallery-modal button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.gallery-modal .prev { left: 30px; }
+.gallery-modal .next { right: 30px; }
+
+.product-thumb {
+  cursor: pointer;
+}
