@@ -3220,6 +3220,8 @@ input, select, textarea {
 
 	}
 
-.hidden {
-	display: none;
+
+.work-item a:not(:first-of-type) {
+  display: none;
 }
+
