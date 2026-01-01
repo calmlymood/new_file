@@ -2135,8 +2135,8 @@ input, select, textarea {
 
 		.image.avatar {
 			border-radius:0%;
-    		margin-left: 0px; 
-    		margin-right: 400px;
+    		margin-left: 4000px; 
+    		margin-right: 0px;
 }
 
 		}
